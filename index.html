@@ -95,12 +95,14 @@ Nonlinear Systems with Provable Stability Guarantees</title>
             <span class="author-block">
               <a href="">Milad Farsi</a><sup>1</sup>,</span>
             <span class="author-block">
+              <a href="">Ruikun Zhou,</a><sup>2</sup>,</span>
+            <span class="author-block">
               <a href="">Amartya Mukherjee</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://jonbarron.info">Christopher Song</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="">Ye Yuan</a><sup>2</sup>,
+              <a href="">Ye Yuan</a><sup>3</sup>,
             </span>
             <span class="author-block">
               <a href="">Jun Liu</a><sup>2</sup>,
@@ -108,8 +110,9 @@ Nonlinear Systems with Provable Stability Guarantees</title>
           </div>
           
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>Automation and Intelligent Systems Group, University of Waterloo,</span>
+            <span class="author-block"><sup>2</sup>Hybrid Systems Lab, University of Waterloo</span>
+            <span class="author-block"><sup>3</sup>AI and Automation School, Huazhong University of Science and Tech.</span>
           </div>
 
           <div class="column has-text-centered">
@@ -237,31 +240,24 @@ Nonlinear Systems with Provable Stability Guarantees</title>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+          This paper introduces a Model-based Reinforce-
+ment Learning (MBRL) framework for solving
+optimal control problems. We use a Satisfiability Modulo Theories (SMT) solver and numerical
+simulations to verify the stability and performance
+of the resulting approximate optimal controllers.
+Leveraging a structured continuous-time model
+described in terms of a basis set, we formulate an
+optimal control problem. The system’s structure
+and value function in quadratic form allow for the
+analytical derivation of update rules, ensuring the
+control’s asymptotic stability and optimality near
+equilibrium. The framework can be employed
+as an online learning-based algorithm by exploiting an identification unit. Hence, we compare
+the proposed approach with Proximal Policy Optimization (PPO), Successive Galerkin Approxima-
+tion (SGA), and Adaptive Dynamic Programming
+(ADP), three well-known Reinforcement Learning (RL) and optimal control techniques. The results demonstrate the advantages of the proposed
+technique in terms of computational efficiency
+and performance.
           </p>
         </div>
       </div>
