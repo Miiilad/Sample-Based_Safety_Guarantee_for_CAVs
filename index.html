@@ -98,9 +98,6 @@ Nonlinear Systems with Provable Stability Guarantees</h1>
             <span class="author-block">
               <a href="">Nasser L. Azad</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Christopher Song</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
               <a href="">Chris Hobbs</a><sup>2</sup>,
             </span>
           </div>
@@ -216,20 +213,12 @@ Nonlinear Systems with Provable Stability Guarantees</h1>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          This paper introduces a Model-based Reinforce-
-ment Learning (MBRL) framework for solving
-optimal control problems. We use a Satisfiability Modulo Theories (SMT) solver and numerical
-simulations to verify the stability and performance
-of the resulting approximate optimal controllers.
-Leveraging a structured continuous-time model
-described in terms of a basis set, we formulate an
-optimal control problem. The system’s structure
-and value function in quadratic form allow for the
-analytical derivation of update rules, ensuring the
-control’s asymptotic stability and optimality near equilibrium. The framework can be employed as an online learning-based algorithm by exploiting an identification unit. Hence, we compare
-the proposed approach with Proximal Policy Optimization (PPO), Successive Galerkin Approximation (SGA), and Adaptive Dynamic Programming (ADP), three well-known Reinforcement Learning (RL) and optimal control techniques. The results demonstrate the advantages of the proposed
-technique in terms of computational efficiency
-and performance.
+This paper presents a novel approach for ensuring safety in distributed heterogeneous platooning systems using learning-based methods.
+The core contribution is the development of sample-based safety guarantees utilizing control barrier functions, which act as a shield to ensure safe operation
+even under uncertain conditions arising from neural network inaccuracies. This safety framework is integrated with a Model Predictive Control (MPC) scheme based on a deep neural network (DNN) model tailored for heterogeneous platooning.
+To enhance the system’s resilience, we incorporate protection against Denial-of-Service (DoS) attacks when deriving the safety conditions. Our approach enables real-time verification of control
+inputs, optimizing for the closest safe control while maintaining adherence to safety constraints. The effectiveness of this technique is demonstrated in a high-fidelity simulation environment,
+CARLA, showcasing its robustness in dynamic and adversarial scenarios.
           </p>
         </div>
       </div>
